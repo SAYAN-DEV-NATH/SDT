@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selection</title>
+    <style>
+        div {
+            background-color: rgb(121, 100, 100);
+        }
+
+        .red {
+            background-color: rgb(226, 195, 195);
+        }
+
+        #green {
+            background-color: rgb(150, 180, 150);
+        }
+
+        div>p {
+            color: blue;
+            background-color: brown;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:link {
+            color: yellow;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: rgb(149, 211, 157);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+
+    <div class="red">
+        I am div
+        <article>
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+
+    <div>
+        <a target="_blank" href="http://www.google.com">google</a>
+        <a target="_blank" href="http://www.facebook.com">facebook</a>
+    </div>
+</body>
+
+</html>
